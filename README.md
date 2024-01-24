@@ -1,6 +1,8 @@
 # customers-crm
 
-This template should help get you started developing with Vue 3 in Vite.
+## Libraries documentation
+### Fomrkit:
+https://formkit.com/essentials/
 
 ## Recommended IDE Setup
 
