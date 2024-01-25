@@ -1,4 +1,10 @@
 # customers-crm
+Este proyecto usa [json-server](https://www.npmjs.com/package/json-server), que nos permite crear una rest api falsa, no utiliza una base de datos, solo con fines educativos o de aprendizaje 
+y para entornos de desarrollo.
+
+### json-server
+Para cargar la bd "falsa": 
+json-server --watch db.json --port 4000
 
 ## Libraries documentation
 ### Fomrkit:

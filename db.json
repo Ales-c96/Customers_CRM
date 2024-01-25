@@ -1,0 +1,41 @@
+{
+  "customers": [
+    {
+      "id": "9c95",
+      "name": "Alejandro",
+      "secondName": "Diadosa",
+      "email": "alejandro.c9.d6@gmail.com",
+      "telephone": "111-333-555",
+      "company": "Alebat",
+      "position": "Frontend"
+    },
+    {
+      "id": "12ae",
+      "name": "Juanjo",
+      "secondName": "De la Torre",
+      "email": "juantodelatorre@correo.com",
+      "telephone": "555-777-888",
+      "company": "Enterprise tecnologies",
+      "position": "Administrador de sistemas"
+    },
+    {
+      "id": "8e30",
+      "name": "Javier",
+      "secondName": "Lorenzo",
+      "email": "daniellorenzo@correo.com",
+      "telephone": "111-333-545",
+      "company": "Gustos s.a",
+      "position": "Cocinero"
+    },
+    {
+      "id": "36b6",
+      "name": "Juan",
+      "secondName": "Gonzalez",
+      "email": "juangonzalez@correo.com",
+      "telephone": "444-666-777",
+      "company": "Empresa",
+      "position": "empresario",
+      "state": 1
+    }
+  ]
+}
