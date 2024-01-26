@@ -1,15 +1,6 @@
 {
   "customers": [
     {
-      "id": "9c95",
-      "name": "Alejandro",
-      "secondName": "Diadosa",
-      "email": "alejandro.c9.d6@gmail.com",
-      "telephone": "111-333-555",
-      "company": "Alebat",
-      "position": "Frontend"
-    },
-    {
       "id": "12ae",
       "name": "Juanjo",
       "secondName": "De la Torre",

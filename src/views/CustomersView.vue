@@ -2,7 +2,7 @@
 import { onMounted, ref, computed } from "vue";
 import RouterLink from "../components/UI/RouterLink.vue";
 import Heading from "../components/UI/Heading.vue";
-import Customer from "../components/UI/Customer.vue";
+import Customer from "../components/Customer.vue";
 import CustomerService from "../services/CustomerService";
 
 defineProps({
