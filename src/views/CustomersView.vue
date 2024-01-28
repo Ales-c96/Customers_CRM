@@ -23,6 +23,21 @@ onMounted(() => {
     })
     .catch((error) => console.log(error));
 });
+
+const updateState = ({ id, state }) => {
+  CustomerService.changeState(id, { state: !state }).then(() => {
+    const index = customers.value.findIndex((customer) => customer.id === id);
+    customers.value[index].state = !state;
+  });
+};
+
+const deleteCustomer = (id) => {
+  CustomerService.deleteCustomer(id)
+    .then(() => {
+      customers.value = customers.value.filter((customer) => customer.id !== id);
+    })
+    .catch((error) => console.log(`No se pudo eliminar al cliente: ${error}`));
+};
 </script>
 
 <template>
@@ -52,7 +67,13 @@ onMounted(() => {
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200 bg-white">
-              <Customer v-for="customer in customers" :key="customer.id" :customer="customer" />
+              <Customer
+                v-for="customer in customers"
+                :key="customer.id"
+                :customer="customer"
+                @update-state="updateState"
+                @delete-customer="deleteCustomer"
+              />
             </tbody>
           </table>
         </div>

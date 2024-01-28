@@ -8,7 +8,7 @@
       "telephone": "555-777-888",
       "company": "Enterprise tecnologies",
       "position": "Administrador de sistemas",
-      "state": 0
+      "state": true
     },
     {
       "id": "8e30",
@@ -18,7 +18,7 @@
       "telephone": "111-333-545",
       "company": "Gustos s.a",
       "position": "Cocinero",
-      "state": 1
+      "state": true
     },
     {
       "id": "36b6",

@@ -29,17 +29,18 @@ const formData = reactive({
 onMounted(() => {
   CustomerService.getCustomersByID(id)
     .then(({ data }) => {
-      formData.name = data.name;
-      formData.secondName = data.secondName;
-      formData.email = data.email;
-      formData.telephone = data.telephone;
-      formData.company = data.company;
-      formData.position = data.position;
+      Object.assign(formData, data);
     })
     .catch((error) => console.log(`Fallo al obtener cliente: ${error}`));
 });
 
-const handleSubmit = () => {};
+const handleSubmit = () => {
+  CustomerService.editCustomer(id, formData).then(
+    router
+      .push({ name: "home" })
+      .catch((error) => `Se produjo un error al editar al usuario: ${error}`)
+  );
+};
 </script>
 
 <template>
@@ -52,7 +53,7 @@ const handleSubmit = () => {};
       <div class="mx-auto md:w-2/3 py-20 px-6">
         <FormKit
           type="form"
-          submit-label="Agregar Cliente"
+          submit-label="Guardar Cambios"
           incomplete-message="No se pudo enviar, revisa los campos del formulario"
           @submit="handleSubmit"
           :value="formData"
